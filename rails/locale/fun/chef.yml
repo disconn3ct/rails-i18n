@@ -1,0 +1,222 @@
+# Swedish Chef translations for Ruby on Rails
+#
+# Translated with the help of the 'chef' filter from Ubuntu's "filters" package
+
+"chef":
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+
+    day_names:
+      - Soondey
+      - Mundey
+      - Tooesdey
+      - Vednesdey
+      - Thoorsdey
+      - Freedey
+      - Setoordey
+    abbr_day_names:
+      - Soon
+      - Mun
+      - Tooe-a
+      - Ved
+      - Thoo
+      - Free
+      - Set
+
+    month_names:
+      - ~
+      - Junooery
+      - Febrooery
+      - Merch
+      - Epreel
+      - Mey
+      - Joone-a
+      - Jooly
+      - Oogoost
+      - September
+      - Ooctuber
+      - Nufember
+      - December
+    abbr_month_names:
+      - ~
+      - Jan
+      - Feb
+      - Mer
+      - Epr
+      - Mey
+      - Joon
+      - Jool
+      - Oog
+      - Sep
+      - Ooct
+      - Nuf
+      - Dec
+    order:
+      - :year
+      - :month
+      - :day
+
+  time:
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      short: "%d %b %H:%M"
+      long: "%B %d, %Y %H:%M"
+    am: "am"
+    pm: "pm"
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " und "
+      last_word_connector: ", und "
+
+    select:
+      prompt: "Pleese-a select"
+
+  number:
+    format:
+      separator: "."
+      delimiter: ","
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+
+    currency:
+      format:
+        format: "%u%n"
+        unit: "$"
+        separator: "."
+        delimiter: ","
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Bork"
+            other: "Bork Borks"
+          kb: "KBork"
+          mb: "MBork"
+          gb: "GBork"
+          tb: "TBork"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: Thuoosund
+          million: Meelliun
+          billion: Beelliun
+          trillion: Treelliun
+          quadrillion: Qooedreelliun
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "helff a meenoote-a"
+      less_than_x_seconds:
+        one:   "less thun 1 secund"
+        other: "less thun %{cuoont} secunds"
+      x_seconds:
+        one:   "1 secund"
+        other: "%{cuoont} secunds"
+      less_than_x_minutes:
+        one:   "less thun a meenoote-a"
+        other: "less thun %{cuoont} meenootes"
+      x_minutes:
+        one:   "1 meenoote-a"
+        other: "%{cuoont} meenootes"
+      about_x_hours:
+        one:   "ebuoot 1 huoor"
+        other: "ebuoot %{cuoont} huoors"
+      x_days:
+        one:   "1 dey"
+        other: "%{cuoont} deys"
+      about_x_months:
+        one:   "ebuoot 1 munt"
+        other: "ebuoot %{cuoont} munths"
+      x_months:
+        one:   "1 munt"
+        other: "%{cuoont} munths"
+      about_x_years:
+        one:   "ebuoot 1 yeer"
+        other: "ebuoot %{cuoont} yeers"
+      over_x_years:
+        one:   "oofer 1 yeer"
+        other: "oofer %{cuoont} yeers"
+      almost_x_years:
+        one:   "elmust 1 yeer"
+        other: "elmust %{cuoont} yeers"
+    prompts:
+      year:   "Yeer"
+      month:  "Munt"
+      day:    "Dey"
+      hour:   "Huoor"
+      minute: "Meenoote-a"
+      second: "Secunds"
+
+  helpers:
+    select:
+      prompt: "Pleese-a select"
+
+    submit:
+      create: 'Creete-a %{mudel}'
+      update: 'Updete-a %{mudel}'
+      submit: 'Sefe-a %{mudel}'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "is nut inclooded in zee leest"
+      exclusion: "is reserfed"
+      invalid: "is infeleed"
+      confirmation: "duesn't metch cunffeermeshun"
+      accepted: "moost be-a eccepted"
+      empty: "cun't be-a impty"
+      blank: "cun't be-a blunk"
+      too_long: "is tuu lung (mexeemoom is %{cuoont} cherecters)"
+      too_short: "is tuu shurt (meenimoom is %{cuoont} cherecters)"
+      wrong_length: "is zee vrung lungt (shuoold be-a %{cuoont} cherecters)"
+      not_a_number: "is nut a noomber"
+      not_an_integer: "moost be-a un integer"
+      greater_than: "moost be-a greeter thun %{cuoont}"
+      greater_than_or_equal_to: "moost be-a greeter thun oor iqooel tu %{cuoont}"
+      equal_to: "moost be-a iqooel tu %{cuoont}"
+      less_than: "moost be-a less thun %{cuoont}"
+      less_than_or_equal_to: "moost be-a less thun oor iqooel tu %{cuoont}"
+      odd: "moost be-a oodd"
+      even: "moost be-a ifeen"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:    "1 irrur pruheebited thees %{mudel} frum beeeng sefed"
+          other:  "%{cuoont} irrurs pruheebited thees %{mudel} frum beeeng sefed"
+        body: "Zeere-a vere-a prublems veet zee fullooeeng feeelds:"
+
+      messages:
+        taken: "hes elreedy beee tekee"
+        record_invalid: "Feleedeshun feeeled: %{irrurs}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute} %{message}"
