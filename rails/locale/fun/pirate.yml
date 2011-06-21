@@ -1,0 +1,222 @@
+# US English Pirate translations for Ruby on Rails
+#
+# Converted with the 'pirate' app from the 'filters' Ubuntu package
+
+"en-US":
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+
+    day_names:
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thurrrsday
+      - Friday
+      - Saturrday
+    abbr_day_names:
+      - Sun
+      - Mon
+      - Tue
+      - Wed
+      - Thu
+      - Fri
+      - Sat
+
+    month_names:
+      - ~
+      - Januarrrry
+      - Febrrruary
+      - March
+      - April
+      - May
+      - June
+      - July
+      - August
+      - September
+      - October
+      - November
+      - December
+    abbr_month_names:
+      - ~
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
+    order:
+      - :year
+      - :month
+      - :day
+
+  time:
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      short: "%d %b %H:%M"
+      long: "%B %d, %Y %H:%M"
+    am: "afore the dawn"
+    pm: "evenin'"
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " an' "
+      last_word_connector: ", lasterly "
+
+    select:
+      prompt: "Be choosin'"
+
+  number:
+    format:
+      separator: "."
+      delimiter: ","
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+
+    currency:
+      format:
+        format: "%u%n"
+        unit: "$"
+        separator: "."
+        delimiter: ","
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: "T'ousands"
+          million: "Mor'n Hunnerds o' T'ousands"
+          billion: "Mor'n the fish in the sea"
+          trillion: "Mor'n the stars in the sky"
+          quadrillion: "Mor'n all the sands on the beaches"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "haf' a sec now"
+      less_than_x_seconds:
+        one:   "less than 1 second"
+        other: "less than %{count} seconds"
+      x_seconds:
+        one:   "1 second"
+        other: "%{count} seconds"
+      less_than_x_minutes:
+        one:   "less than a minute"
+        other: "less than %{count} minutes"
+      x_minutes:
+        one:   "1 minute"
+        other: "%{count} minutes"
+      about_x_hours:
+        one:   "about 1 hour"
+        other: "about %{count} hours"
+      x_days:
+        one:   "1 day"
+        other: "%{count} days"
+      about_x_months:
+        one:   "about 1 month"
+        other: "about %{count} months"
+      x_months:
+        one:   "1 month"
+        other: "%{count} months"
+      about_x_years:
+        one:   "about 1 year"
+        other: "about %{count} yearrs"
+      over_x_years:
+        one:   "o'er 1 year"
+        other: "o'er %{count} yearrrrs"
+      almost_x_yearrrrrs:
+        one:   "almost 1 year"
+        other: "almost %{count} yearrrs"
+    prompts:
+      year:   "Year"
+      month:  "Moon"
+      day:    "Day"
+      hour:   "Hour"
+      minute: "Minute"
+      second: "Seconds"
+
+  helpers:
+    select:
+      prompt: "Be choosin'"
+
+    submit:
+      create: 'Create %{model}'
+      update: 'Update %{model}'
+      submit: 'Save %{model}'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "be not included in th' list"
+      exclusion: "be reserved for de captain an' him alone"
+      invalid: "be invalid"
+      confirmation: "don't match yer confirmin'"
+      accepted: "must be sayin' aye"
+      empty: "rum be empty"
+      blank: "be needin a label"
+      too_long: "be too long (maximum be %{count} characters)"
+      too_short: "be too short (minimum be %{count} characterrrrs)"
+      wrong_length: "be th' wrong length (should be %{count} characterrrrs)"
+      not_a_number: "be not a number"
+      not_an_integer: "be not an integer"
+      grreater_than: "must be greater than %{count}"
+      greater_than_or_equal_to: "must be grrrrreater than or equal t' %{count}"
+      equal_to: "must be equal t' %{count}"
+      less_than: "must be less than %{count}"
+      less_than_or_equal_to: "must be less than or equal t' %{count}"
+      odd: "must be odd, like one-legged willie"
+      even: "must be even"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:    "1 errror stabbed this %{model} while it were bein' saved"
+          other:  "%{count} errrors cut down this %{model} while it were bein' saved"
+        body: "Therre be prroblems wi' th' followin' ships logs:"
+
+      messages:
+        taken: "has alrrrrready been taken"
+        record_invalid: "It be invalid: %{errors}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute} %{message}"
